@@ -28,101 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cmbBxRuta = new System.Windows.Forms.ComboBox();
             this.btnCaptura = new System.Windows.Forms.Button();
             this.pictrBxCaptura = new System.Windows.Forms.PictureBox();
             this.cmbBoxPantallas = new System.Windows.Forms.ComboBox();
             this.labelRuta = new System.Windows.Forms.Label();
             this.labelPantalla = new System.Windows.Forms.Label();
+            this.btnExaminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictrBxCaptura)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbBxRuta
             // 
-            this.cmbBxRuta.AccessibleDescription = "Aqui se pone la ruta donde se guardaran las capturas de pantalla";
-            this.cmbBxRuta.AccessibleName = "Campo de ruta";
+            resources.ApplyResources(this.cmbBxRuta, "cmbBxRuta");
+            this.cmbBxRuta.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbBxRuta.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.cmbBxRuta.BackColor = System.Drawing.Color.White;
             this.cmbBxRuta.FormattingEnabled = true;
-            this.cmbBxRuta.Location = new System.Drawing.Point(48, 14);
             this.cmbBxRuta.Name = "cmbBxRuta";
-            this.cmbBxRuta.Size = new System.Drawing.Size(343, 21);
-            this.cmbBxRuta.TabIndex = 0;
             // 
             // btnCaptura
             // 
-            this.btnCaptura.AccessibleDescription = "Este boton sirve para tomar la captura de pantalla";
-            this.btnCaptura.AccessibleName = "Boton captura";
+            resources.ApplyResources(this.btnCaptura, "btnCaptura");
             this.btnCaptura.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnCaptura.Font = new System.Drawing.Font("Lucida Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCaptura.ForeColor = System.Drawing.Color.White;
-            this.btnCaptura.Location = new System.Drawing.Point(397, 12);
             this.btnCaptura.Name = "btnCaptura";
-            this.btnCaptura.Size = new System.Drawing.Size(75, 23);
-            this.btnCaptura.TabIndex = 1;
-            this.btnCaptura.Text = "Captura";
             this.btnCaptura.UseVisualStyleBackColor = false;
             this.btnCaptura.Click += new System.EventHandler(this.btnCaptura_Click);
             // 
             // pictrBxCaptura
             // 
-            this.pictrBxCaptura.AccessibleDescription = "Aqui se muestra la ultima captura de pantalla cuando se guarda";
-            this.pictrBxCaptura.AccessibleName = "Campo imagen";
-            this.pictrBxCaptura.Location = new System.Drawing.Point(184, 46);
+            resources.ApplyResources(this.pictrBxCaptura, "pictrBxCaptura");
+            this.pictrBxCaptura.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictrBxCaptura.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictrBxCaptura.Name = "pictrBxCaptura";
-            this.pictrBxCaptura.Size = new System.Drawing.Size(288, 253);
-            this.pictrBxCaptura.TabIndex = 2;
             this.pictrBxCaptura.TabStop = false;
+            this.pictrBxCaptura.Click += new System.EventHandler(this.pictrBxCaptura_Click);
             // 
             // cmbBoxPantallas
             // 
-            this.cmbBoxPantallas.AccessibleDescription = "Aqui se enlistan las pantallas con las que cuenta tu equipo, se debe especificar " +
-    "una, de la cual tomara la captura de pantalla";
-            this.cmbBoxPantallas.AccessibleName = "Campo Pantalla";
+            resources.ApplyResources(this.cmbBoxPantallas, "cmbBoxPantallas");
             this.cmbBoxPantallas.FormattingEnabled = true;
-            this.cmbBoxPantallas.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.cmbBoxPantallas.Location = new System.Drawing.Point(60, 46);
             this.cmbBoxPantallas.Name = "cmbBoxPantallas";
-            this.cmbBoxPantallas.Size = new System.Drawing.Size(121, 21);
-            this.cmbBoxPantallas.TabIndex = 3;
             // 
             // labelRuta
             // 
-            this.labelRuta.AutoSize = true;
-            this.labelRuta.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRuta.Location = new System.Drawing.Point(4, 15);
+            resources.ApplyResources(this.labelRuta, "labelRuta");
+            this.labelRuta.ForeColor = System.Drawing.Color.Black;
             this.labelRuta.Name = "labelRuta";
-            this.labelRuta.Size = new System.Drawing.Size(37, 12);
-            this.labelRuta.TabIndex = 4;
-            this.labelRuta.Text = "Ruta: ";
             // 
             // labelPantalla
             // 
-            this.labelPantalla.AccessibleDescription = "";
-            this.labelPantalla.AccessibleName = "";
-            this.labelPantalla.AutoSize = true;
+            resources.ApplyResources(this.labelPantalla, "labelPantalla");
             this.labelPantalla.BackColor = System.Drawing.Color.Transparent;
-            this.labelPantalla.Font = new System.Drawing.Font("Lucida Sans", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPantalla.Location = new System.Drawing.Point(4, 49);
+            this.labelPantalla.ForeColor = System.Drawing.Color.Black;
             this.labelPantalla.Name = "labelPantalla";
-            this.labelPantalla.Size = new System.Drawing.Size(56, 12);
-            this.labelPantalla.TabIndex = 5;
-            this.labelPantalla.Text = "Pantalla: ";
+            // 
+            // btnExaminar
+            // 
+            this.btnExaminar.ForeColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.btnExaminar, "btnExaminar");
+            this.btnExaminar.Name = "btnExaminar";
+            this.btnExaminar.UseVisualStyleBackColor = true;
+            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(479, 311);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.btnExaminar);
             this.Controls.Add(this.labelPantalla);
             this.Controls.Add(this.labelRuta);
             this.Controls.Add(this.cmbBoxPantallas);
             this.Controls.Add(this.pictrBxCaptura);
             this.Controls.Add(this.btnCaptura);
             this.Controls.Add(this.cmbBxRuta);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "ScreenSave";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictrBxCaptura)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,6 +124,7 @@
         private System.Windows.Forms.ComboBox cmbBoxPantallas;
         private System.Windows.Forms.Label labelRuta;
         private System.Windows.Forms.Label labelPantalla;
+        private System.Windows.Forms.Button btnExaminar;
     }
 }
 

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,8 @@ namespace ScreenSave
 {
     public partial class Form1 : Form
     {
+        String ultimaImagen = "";
+        List<String> historialRutas=new List<string>();
         public Form1()
         {
             InitializeComponent();
@@ -23,6 +27,7 @@ namespace ScreenSave
         {
             var rutaInicial= Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
             cmbBxRuta.Text= rutaInicial;
+            cmbBxRuta.DataSource = historialRutas;
         }
 
         private String obtenerMomento()
@@ -63,12 +68,47 @@ namespace ScreenSave
             // Copia la pantalla
             gfxCaptura.CopyFromScreen(Screen.AllScreens[cmbBoxPantallas.SelectedIndex].Bounds.X, Screen.AllScreens[cmbBoxPantallas.SelectedIndex].Bounds.Y, 0, 0, Screen.AllScreens[cmbBoxPantallas.SelectedIndex].Bounds.Size);
 
+            ultimaImagen = cmbBxRuta.Text + "\\sS_" + obtenerMomento() + ".png";
             // Guarda a un archivo
-            bmpCaptura.Save(cmbBxRuta.Text+"\\sS_"+ obtenerMomento()+".png");
-
+            bmpCaptura.Save(ultimaImagen);
+            
             // La muestra en un picture box
             pictrBxCaptura.Image = bmpCaptura;
             pictrBxCaptura.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+            using (var fbd = new FolderBrowserDialog())
+            {
+                fbd.SelectedPath = cmbBxRuta.Text;
+                DialogResult result = fbd.ShowDialog();
+
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    String carpetaSeleccionada = fbd.SelectedPath;
+                    cmbBxRuta.Text = carpetaSeleccionada;
+                    
+                    //string[] files = Directory.GetFiles(fbd.SelectedPath);
+                    //System.Windows.Forms.MessageBox.Show("Files found: " + files.Length.ToString(), "Message");
+                }
+            }
+        }
+
+        private void pictrBxCaptura_Click(object sender, EventArgs e)
+        {
+            if (!ultimaImagen.Equals(""))
+            {
+                Process photoViewer = new Process();
+                photoViewer.StartInfo.FileName = ultimaImagen;
+                //photoViewer.StartInfo.Arguments = @"Your image file path";
+                photoViewer.Start();
+            }
         }
     }
 }

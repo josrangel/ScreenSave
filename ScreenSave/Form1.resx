@@ -117,4 +117,241 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="cmbBxRuta.AccessibleDescription" xml:space="preserve">
+    <value>Aqui se pone la ruta donde se guardaran las capturas de pantalla</value>
+  </data>
+  <data name="cmbBxRuta.AccessibleName" xml:space="preserve">
+    <value>Campo de ruta</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmbBxRuta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 9</value>
+  </data>
+  <data name="cmbBxRuta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmbBxRuta.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRuta.Name" xml:space="preserve">
+    <value>cmbBxRuta</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRuta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRuta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbBxRuta.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnCaptura.AccessibleDescription" xml:space="preserve">
+    <value>Este boton sirve para tomar la captura de pantalla</value>
+  </data>
+  <data name="btnCaptura.AccessibleName" xml:space="preserve">
+    <value>Boton captura</value>
+  </data>
+  <data name="btnCaptura.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans, 9.75pt</value>
+  </data>
+  <data name="btnCaptura.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 39</value>
+  </data>
+  <data name="btnCaptura.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 23</value>
+  </data>
+  <data name="btnCaptura.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnCaptura.Text" xml:space="preserve">
+    <value>Captura</value>
+  </data>
+  <data name="&gt;&gt;btnCaptura.Name" xml:space="preserve">
+    <value>btnCaptura</value>
+  </data>
+  <data name="&gt;&gt;btnCaptura.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCaptura.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnCaptura.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pictrBxCaptura.AccessibleDescription" xml:space="preserve">
+    <value>Aqui se muestra la ultima captura de pantalla cuando se guarda</value>
+  </data>
+  <data name="pictrBxCaptura.AccessibleName" xml:space="preserve">
+    <value>Campo imagen</value>
+  </data>
+  <data name="pictrBxCaptura.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 74</value>
+  </data>
+  <data name="pictrBxCaptura.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 253</value>
+  </data>
+  <data name="pictrBxCaptura.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictrBxCaptura.Name" xml:space="preserve">
+    <value>pictrBxCaptura</value>
+  </data>
+  <data name="&gt;&gt;pictrBxCaptura.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictrBxCaptura.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pictrBxCaptura.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cmbBoxPantallas.AccessibleDescription" xml:space="preserve">
+    <value>Aqui se enlistan las pantallas con las que cuenta tu equipo, se debe especificar una, de la cual tomara la captura de pantalla</value>
+  </data>
+  <data name="cmbBoxPantallas.AccessibleName" xml:space="preserve">
+    <value>Campo Pantalla</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmbBoxPantallas.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="cmbBoxPantallas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>65, 39</value>
+  </data>
+  <data name="cmbBoxPantallas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 21</value>
+  </data>
+  <data name="cmbBoxPantallas.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxPantallas.Name" xml:space="preserve">
+    <value>cmbBoxPantallas</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxPantallas.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxPantallas.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmbBoxPantallas.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelRuta.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelRuta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelRuta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="labelRuta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 12</value>
+  </data>
+  <data name="labelRuta.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelRuta.Text" xml:space="preserve">
+    <value>Ruta: </value>
+  </data>
+  <data name="&gt;&gt;labelRuta.Name" xml:space="preserve">
+    <value>labelRuta</value>
+  </data>
+  <data name="&gt;&gt;labelRuta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRuta.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelRuta.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelPantalla.AccessibleDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelPantalla.AccessibleName" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelPantalla.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPantalla.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Sans, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelPantalla.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 43</value>
+  </data>
+  <data name="labelPantalla.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 12</value>
+  </data>
+  <data name="labelPantalla.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelPantalla.Text" xml:space="preserve">
+    <value>Pantalla: </value>
+  </data>
+  <data name="&gt;&gt;labelPantalla.Name" xml:space="preserve">
+    <value>labelPantalla</value>
+  </data>
+  <data name="&gt;&gt;labelPantalla.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPantalla.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;labelPantalla.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnExaminar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnExaminar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>280, 8</value>
+  </data>
+  <data name="btnExaminar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnExaminar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnExaminar.Text" xml:space="preserve">
+    <value>Examinar</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.Name" xml:space="preserve">
+    <value>btnExaminar</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnExaminar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>367, 340</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ScreenSave</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
